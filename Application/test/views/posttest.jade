@@ -1,0 +1,9 @@
+extends layout
+
+
+block content
+    h1 PostTest
+    form(action="/posttest", method="post") 
+        input(type="text" name="col")
+        input(type="text" name="stx")
+        button(type="submit") Post
