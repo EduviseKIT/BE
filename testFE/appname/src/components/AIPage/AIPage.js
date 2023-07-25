@@ -3,7 +3,7 @@ import { useCallback, useState } from "react";
 
 function AI() {
     const [target, setTarget] = useState("default");
-    const [resultVisible, setResultVisible] = useState(false);
+    const [resultVisible, setResultVisible] = useState(undefined);
     const [result, setResult] = useState(undefined);
 
     const __eva = useCallback(()=>{
