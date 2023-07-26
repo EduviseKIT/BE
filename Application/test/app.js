@@ -13,14 +13,16 @@ var aiResultRouter = require('./routes/aiResult');
 
 
 var app = express();
-const cors = require("cors");
 
+// CORS허용 설정
+const cors = require("cors");
+app.use(cors());
 
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-app.use(cors());
+
 
 app.use(logger('dev'));
 app.use(express.json());
