@@ -56,4 +56,4 @@ app.use(function(err, req, res, next) {
 
 module.exports = app;
 
-// BE에서 가장 중심이 되는 파일
+// BE에서 가장 중심이 되는 파일, express 설정
