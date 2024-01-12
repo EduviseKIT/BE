@@ -5,7 +5,7 @@ function AI() {
     const [grade, setGrade] = useState("")
     const [subject, setSubject] = useState("");
     const [resultVisible, setResultVisible] = useState(false);
-    const [result, setResult] = useState(undefined);
+    const [result, setResult] = useState([]);
 
     const __eva = useCallback(()=>{
         if(grade && subject){
@@ -22,11 +22,9 @@ function AI() {
             )
             .then((data)=> {
                 console.log(data.result);
-                const {result_row} = data;
-                console.log(result_row);
-                setResult(result_row); // Set the parsed JSON data to the result state
+                setResult(data.result); // Set the parsed JSON data to the result state
                 console.log(result);
-                if(!result_row){
+                if(!result){
                     setResult("값이 없습니다.")
                 }
                 setResultVisible(true);
