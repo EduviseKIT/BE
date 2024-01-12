@@ -27,7 +27,5 @@ yarn-error.log*
 
 
 # 파이썬 가상환경
-/flaskProject/venv/*
-/flaskProject/.idea
-/flaskProject/__pycache__
-flaskProject/views/__pycache__/AI.cpython-311.pyc
+AIServer/.idea/
+AIServer/__pycache__/

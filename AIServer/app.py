@@ -1,11 +1,11 @@
 from flask import Flask
 from flask_cors import CORS
-
+from routers.AI import AI
 
 app = Flask(__name__)
 CORS()
 
-from views import AI
+
 app.register_blueprint(AI.bp)
 
 
